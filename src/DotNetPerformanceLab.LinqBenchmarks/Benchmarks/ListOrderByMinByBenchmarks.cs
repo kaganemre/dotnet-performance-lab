@@ -5,27 +5,27 @@ namespace DotNetPerformanceLab.LinqBenchmarks.Benchmarks;
 [SimpleJob(RuntimeMoniker.Net80)]
 [SimpleJob(RuntimeMoniker.Net90)]
 [SimpleJob(RuntimeMoniker.Net10_0)]
-[DisassemblyDiagnoser(maxDepth: 5, exportCombinedDisassemblyReport: true, exportDiff: true, printSource: true)]
+[DisassemblyDiagnoser(printSource: true)]
 [MemoryDiagnoser]
 public class ListOrderByMinByBenchmarks
 {
-    private List<User> _users = null!;
+    private List<Product> _products = null!;
 
     [GlobalSetup]
     public void Setup()
     {
         var random = new Random(42);
 
-        _users = Enumerable.Range(1, 10_000)
-            .Select(_ => new User(Guid.NewGuid(), $"User_{random.Next(0, 1_000_000):D6}"))
+        _products = Enumerable.Range(1, 10_000)
+            .Select(_ => new Product(Guid.NewGuid(), random.Next(1, 10_000_000) / 100m))
             .ToList();
     }
 
     [Benchmark]
-    public User OrderByFirst() => _users.OrderBy(x => x.Name).First();
+    public Product OrderByFirst() => _products.OrderBy(x => x.Price).First();
 
     [Benchmark]
-    public User MinBy() => _users.MinBy(x => x.Name)!;
+    public Product MinBy() => _products.MinBy(x => x.Price)!;
 }
 
-public sealed record User(Guid Id, string Name);
+public sealed record Product(Guid Id, decimal Price);
