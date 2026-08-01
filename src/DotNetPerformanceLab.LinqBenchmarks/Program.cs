@@ -1,3 +1,3 @@
 ﻿using DotNetPerformanceLab.LinqBenchmarks.Benchmarks;
 
-BenchmarkRunner.Run<ListOrderByMinByBenchmarks>();
+BenchmarkRunner.Run<ListContainsAnyBenchmarks>();
