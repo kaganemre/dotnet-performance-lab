@@ -1,3 +1,3 @@
 ﻿using DotNetPerformanceLab.LinqBenchmarks.Benchmarks;
 
-BenchmarkRunner.Run<ListContainsAnyBenchmarks>();
+BenchmarkRunner.Run<ListAnyCountBenchmarks>();
