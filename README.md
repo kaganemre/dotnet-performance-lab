@@ -2,10 +2,9 @@
 
 ![.NET](https://img.shields.io/badge/.NET-8%20%7C%209%20%7C%2010-512BD4?logo=dotnet)
 ![BenchmarkDotNet](https://img.shields.io/badge/BenchmarkDotNet-Performance-blue)
-![NBomber](https://img.shields.io/badge/NBomber-Load%20Testing-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-A collection of performance benchmarks and load testing experiments built with **BenchmarkDotNet** and **NBomber**.
+A collection of performance benchmarks built with **BenchmarkDotNet**.
 
 This repository explores the performance characteristics of different .NET APIs, language features, and implementation approaches through reproducible benchmarks.
 
@@ -29,7 +28,6 @@ Rather than relying on assumptions, these benchmarks provide measurable results 
 - Memory allocation analysis
 - Runtime and code generation comparisons
 - Easy to extend with new benchmark scenarios
-- Load testing scenarios using NBomber
 
 ---
 
@@ -38,8 +36,7 @@ Rather than relying on assumptions, these benchmarks provide measurable results 
 ```text
 src
 ├── DotNetPerformanceLab.LinqBenchmarks
-├── DotNetPerformanceLab.StringBenchmarks
-└── DotNetPerformanceLab.LoadTests
+└── DotNetPerformanceLab.StringBenchmarks
 ```
 
 ---
@@ -98,7 +95,6 @@ It illustrates the significant LINQ performance improvements introduced in newer
 - .NET 9
 - .NET 10
 - BenchmarkDotNet
-- NBomber
 
 ---
 
@@ -152,7 +148,7 @@ BenchmarkDotNet generates detailed reports including:
 
 Performance optimisation should always be guided by measurements rather than assumptions.
 
-This repository demonstrates how different APIs, language features, and implementation approaches behave across multiple .NET versions through repeatable benchmarks and load tests.
+This repository demonstrates how different APIs, language features, and implementation approaches behave across multiple .NET versions through repeatable benchmarks.
 
 Whether you are comparing LINQ methods, evaluating string operations, or exploring framework improvements, the results are intended to support learning, experimentation, and evidence-based optimisation.
 
@@ -162,7 +158,7 @@ Whether you are comparing LINQ methods, evaluating string operations, or explori
 
 Contributions are welcome.
 
-If you have ideas for new benchmark scenarios, performance experiments, or load testing scenarios, feel free to open an issue or submit a pull request.
+If you have ideas for new benchmark scenarios or performance experiments, feel free to open an issue or submit a pull request.
 
 ---
 
