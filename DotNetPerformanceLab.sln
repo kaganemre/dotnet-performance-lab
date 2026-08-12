@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPerformanceLab.String
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPerformanceLab.LinqBenchmarks", "src\DotNetPerformanceLab.LinqBenchmarks\DotNetPerformanceLab.LinqBenchmarks.csproj", "{287BFBCD-8825-4652-8F22-9E39A2E654DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPerformanceLab.LoadTests", "src\DotNetPerformanceLab.LoadTests\DotNetPerformanceLab.LoadTests.csproj", "{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,18 +43,6 @@ Global
 		{287BFBCD-8825-4652-8F22-9E39A2E654DE}.Release|x64.Build.0 = Release|Any CPU
 		{287BFBCD-8825-4652-8F22-9E39A2E654DE}.Release|x86.ActiveCfg = Release|Any CPU
 		{287BFBCD-8825-4652-8F22-9E39A2E654DE}.Release|x86.Build.0 = Release|Any CPU
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}.Debug|x64.Build.0 = Debug|Any CPU
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}.Debug|x86.Build.0 = Debug|Any CPU
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}.Release|x64.ActiveCfg = Release|Any CPU
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}.Release|x64.Build.0 = Release|Any CPU
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}.Release|x86.ActiveCfg = Release|Any CPU
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +50,5 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A7184882-8978-413A-B421-27AFD37C1CD1} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{287BFBCD-8825-4652-8F22-9E39A2E654DE} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
-		{6AF0C351-73C6-4B44-B6B7-683AA0A2EE30} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 	EndGlobalSection
 EndGlobal
