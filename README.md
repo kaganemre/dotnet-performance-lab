@@ -24,6 +24,7 @@ Rather than relying on assumptions, these benchmarks provide measurable results 
 - Performance benchmarks powered by BenchmarkDotNet
 - Comparisons across .NET 8, .NET 9 and .NET 10
 - LINQ performance experiments
+- Collection performance experiments
 - String performance experiments
 - Memory allocation analysis
 - Runtime and code generation comparisons
@@ -35,6 +36,7 @@ Rather than relying on assumptions, these benchmarks provide measurable results 
 
 ```text
 src
+├── DotNetPerformanceLab.CollectionBenchmarks
 ├── DotNetPerformanceLab.LinqBenchmarks
 └── DotNetPerformanceLab.StringBenchmarks
 ```
@@ -42,6 +44,12 @@ src
 ---
 
 ## Benchmark Projects
+
+### Collection Benchmarks
+
+Current benchmark scenarios include:
+
+- `List<T>.Contains()` vs `HashSet<T>.Contains()`
 
 ### LINQ Benchmarks
 
@@ -148,9 +156,9 @@ BenchmarkDotNet generates detailed reports including:
 
 Performance optimisation should always be guided by measurements rather than assumptions.
 
-This repository demonstrates how different APIs, language features, and implementation approaches behave across multiple .NET versions through repeatable benchmarks.
+This repository demonstrates how different APIs, collection types, language features, and implementation approaches behave across multiple .NET versions through repeatable benchmarks.
 
-Whether you are comparing LINQ methods, evaluating string operations, or exploring framework improvements, the results are intended to support learning, experimentation, and evidence-based optimisation.
+Whether you are comparing LINQ methods, evaluating collection lookup strategies, analysing string operations, or exploring framework improvements, the results are intended to support learning, experimentation, and evidence-based optimisation.
 
 ---
 
