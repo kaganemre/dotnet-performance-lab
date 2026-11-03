@@ -1,3 +1,3 @@
 ﻿using DotNetPerformanceLab.CollectionBenchmarks.Benchmarks;
 
-BenchmarkRunner.Run<ListHashSetContainsBenchmarks>();
+BenchmarkRunner.Run<ListBinarySearchHashSetContainsBenchmarks>();
